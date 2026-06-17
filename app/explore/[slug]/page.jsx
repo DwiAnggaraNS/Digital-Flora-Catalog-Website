@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
-import { plants } from "@/lib/plants";
 import Link from "next/link";
 
 export default function PlantDetailPage() {
@@ -10,13 +9,28 @@ export default function PlantDetailPage() {
   const router = useRouter();
   const { slug } = params;
 
-  // Find the plant in mock DB
-  const plant = plants.find((p) => p.slug === slug);
-
-  // Carousel state
+  const [plant, setPlant] = useState(null);
+  const [loading, setLoading] = useState(true);
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Auto-slide effect for plants with multiple images
+  // Fetch plant data by slug from api
+  useEffect(() => {
+    const fetchPlant = async () => {
+      try {
+        const res = await fetch("/api/plants");
+        const list = await res.json();
+        const found = list.find((p) => p.slug === slug);
+        setPlant(found || null);
+      } catch (err) {
+        console.error(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchPlant();
+  }, [slug]);
+
+  // Auto-slide effect
   useEffect(() => {
     if (!plant || !plant.images || plant.images.length <= 1) return;
 
@@ -27,7 +41,14 @@ export default function PlantDetailPage() {
     return () => clearInterval(interval);
   }, [plant]);
 
-  // Handle case where plant is not found
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-background">
+        <p className="text-secondary text-sm animate-pulse">Memuat informasi tanaman...</p>
+      </div>
+    );
+  }
+
   if (!plant) {
     return (
       <div className="pt-24 pb-32 flex flex-col items-center justify-center min-h-screen text-center px-4">
@@ -50,7 +71,8 @@ export default function PlantDetailPage() {
     );
   }
 
-  const { nama_lokal, nama_latin, famili, kategori, lokasi_taman, deskripsi_singkat, deskripsi_lengkap, manfaat, images } = plant;
+  const { name, nama_lokal, nama_latin, famili, kategori, lokasi_taman, deskripsi_singkat, deskripsi_lengkap, manfaat, images } = plant;
+  const displayName = nama_lokal || name;
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-on-surface">
@@ -72,8 +94,8 @@ export default function PlantDetailPage() {
             onClick={() => {
               if (navigator.share) {
                 navigator.share({
-                  title: `Sapa Flora Alamendah - ${nama_lokal}`,
-                  text: `Yuk kenalan dengan ${nama_lokal} (${nama_latin})`,
+                  title: `Sapa Flora Alamendah - ${displayName}`,
+                  text: `Yuk kenalan dengan ${displayName} (${nama_latin})`,
                   url: window.location.href,
                 }).catch(console.error);
               } else {
@@ -105,10 +127,10 @@ export default function PlantDetailPage() {
             className="flex h-full transition-transform duration-500 ease-out"
             style={{ transform: `translateX(-${currentSlide * 100}%)` }}
           >
-            {images.map((imgUrl, index) => (
+            {images && images.map((imgUrl, index) => (
               <div key={index} className="min-w-full h-full relative">
                 <img
-                  alt={`${nama_lokal} slide ${index + 1}`}
+                  alt={`${displayName} slide ${index + 1}`}
                   className="w-full h-full object-cover"
                   src={imgUrl}
                 />
@@ -117,7 +139,7 @@ export default function PlantDetailPage() {
           </div>
 
           {/* Carousel Dot Indicators */}
-          {images.length > 1 && (
+          {images && images.length > 1 && (
             <div className="absolute bottom-6 left-0 right-0 flex justify-center gap-3">
               {images.map((_, index) => (
                 <button
@@ -152,7 +174,7 @@ export default function PlantDetailPage() {
               )}
             </div>
             <h1 className="font-display-lg-mobile md:text-display-lg text-primary mt-2">
-              {nama_lokal}
+              {displayName}
             </h1>
             <p className="font-body-lg italic text-secondary-fixed-dim -mt-1">
               {nama_latin}
