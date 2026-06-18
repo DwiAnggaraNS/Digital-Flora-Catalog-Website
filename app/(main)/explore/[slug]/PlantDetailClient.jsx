@@ -27,7 +27,7 @@ export default function PlantDetailClient({ plant }) {
           <div className="flex h-full transition-transform duration-500 ease-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
             {images && images.map((imgUrl, index) => (
               <div key={index} className="min-w-full h-full relative">
-                <img alt={`${displayName} slide ${index + 1}`} className="w-full h-full object-cover" src={imgUrl} />
+                <img alt={`${displayName} slide ${index + 1}`} className="w-full h-full object-cover" src={imgUrl} loading="lazy" decoding="async" />
               </div>
             ))}
           </div>
@@ -47,7 +47,7 @@ export default function PlantDetailClient({ plant }) {
               {lokasi_taman && (<><span>•</span><span className="text-primary font-bold bg-primary-container/10 px-2 py-0.5 rounded">{lokasi_taman}</span></>)}
             </div>
             <h1 className="font-display-lg-mobile md:text-display-lg text-primary mt-2">{displayName}</h1>
-            <p className="font-body-lg italic text-secondary-fixed-dim -mt-1">{nama_latin}</p>
+            <p className="font-body-lg italic text-primary -mt-1">{nama_latin}</p>
             {deskripsi_singkat && <p className="font-body-md text-on-surface-variant font-medium mt-2">{deskripsi_singkat}</p>}
           </div>
         </section>

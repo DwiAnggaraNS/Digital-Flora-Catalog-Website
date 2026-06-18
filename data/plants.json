@@ -19,5 +19,117 @@
     ],
     "is_qr_code_generated": true,
     "qr_code_path": "/images/qrcodes/QR-flora-001.png"
+  },
+  {
+    "id": "flora-002",
+    "slug": "stroberi",
+    "nama_lokal": "Stroberi",
+    "nama_latin": "Fragaria × ananassa",
+    "famili": "Rosaceae",
+    "kategori": "Bernilai Ekonomi",
+    "lokasi_taman": "Area Pertanian Edukasi",
+    "deskripsi_singkat": "Buah merah mungil ikonik primadona kawasan agrowisata Ciwidey.",
+    "deskripsi_lengkap": "Stroberi adalah komoditas unggulan di Desa Alamendah. Tanaman merambat berdaun gerigi ini tumbuh sangat optimal di udara dingin pegunungan. Di area taman edukasi, tanaman ini ditunjukkan sebagai representasi identitas agrowisata lokal yang menghidupi warga desa.",
+    "manfaat": [
+      "Kaya akan vitamin C dan antioksidan untuk kesehatan",
+      "Komoditas utama penggerak ekonomi agrowisata desa",
+      "Bahan baku utama industri rumahan (selai",
+      "sirup",
+      "dan penganan lokal)"
+    ],
+    "images": [
+      "/images/plants/1781777884025-strawberrycalifornia.jpg",
+      "/images/plants/1781777884032-id-11134207-7r990-lm7dzjz3t67ofb.jpg"
+    ],
+    "is_qr_code_generated": true,
+    "qr_code_path": "/images/qrcodes/QR-flora-002.png"
+  },
+  {
+    "id": "flora-003",
+    "slug": "pohon-teh",
+    "nama_lokal": "Pohon Teh",
+    "nama_latin": "Camellia sinensis",
+    "famili": "Theaceae",
+    "kategori": "Bernilai Ekonomi",
+    "lokasi_taman": "Zona Perbatasan dan Jalur Hijau",
+    "deskripsi_singkat": "Tanaman perdu penghasil daun penyegar yang membentuk lanskap Rancabali.",
+    "deskripsi_lengkap": "Hamparan kebun teh adalah identitas visual utama Kecamatan Rancabali. Di area alun-alun, teh ditanam sebagai tanaman perdu yang dipangkas rapi secara periodik, memberikan nuansa hijau yang menenangkan sekaligus mengedukasi pengunjung tentang asal mula minuman teh.",
+    "manfaat": [
+      "Pucuk daunnya diproses menjadi minuman teh yang kaya polifenol",
+      "Sistem perakarannya menahan erosi tanah di area miring pegunungan",
+      "Membantu menyerap emisi karbon dioksida secara efektif"
+    ],
+    "images": [
+      "/images/plants/1781777899998-097835000_1704704526-green-tea-bud-leaves-green-tea-plantations-morning.jpg",
+      "/images/plants/1781777900003-pngtree-fresh-tea-leaves-green-branch-camellia-sinensis-plant-png-image_20964564.png",
+      "/images/plants/1781777900007-X-Jenis-Teh-Ini-Terbuat-dari-Daun-Camellia-Sinesis.jpg"
+    ],
+    "is_qr_code_generated": true,
+    "qr_code_path": "/images/qrcodes/QR-flora-003.png"
+  },
+  {
+    "id": "flora-004",
+    "slug": "hortensia-panca-warna-",
+    "nama_lokal": "Hortensia (Panca Warna)",
+    "nama_latin": "Hydrangea macrophylla",
+    "famili": "Hydrangeaceae",
+    "kategori": "Tanaman Hias",
+    "lokasi_taman": "Taman Estetika dan Area Komunal",
+    "deskripsi_singkat": "Bunga hias membulat yang warnanya berubah sesuai tingkat keasaman tanah.",
+    "deskripsi_lengkap": "Bunga Panca Warna sangat mudah dijumpai menghiasi pekarangan warga dataran tinggi Bandung. Keunikannya terletak pada bunganya yang tumbuh menggerombol membentuk bola besar. Warnanya dapat berubah-ubah secara alami antara biru, ungu, hingga merah muda bergantung pada tingkat pH tanah di tempatnya tumbuh.",
+    "manfaat": [
+      "Menambah daya tarik visual dan estetika taman publik",
+      "Menjadi indikator alami untuk mengetahui tingkat keasaman (pH) tanah",
+      "Bunga potong yang populer untuk dekorasi acara"
+    ],
+    "images": [
+      "/images/plants/1781777911744-images.jpg",
+      "/images/plants/1781777911747-images-(1).jpg"
+    ],
+    "is_qr_code_generated": true,
+    "qr_code_path": "/images/qrcodes/QR-flora-004.png"
+  },
+  {
+    "id": "flora-005",
+    "slug": "kopi-arabika",
+    "nama_lokal": "Kopi Arabika",
+    "nama_latin": "Coffea arabica",
+    "famili": "Rubiaceae",
+    "kategori": "Bernilai Ekonomi",
+    "lokasi_taman": "Kebun Edukasi Botani",
+    "deskripsi_singkat": "Tanaman perdu penghasil biji kopi berkualitas tinggi dari pegunungan Sunda.",
+    "deskripsi_lengkap": "Kopi Arabika tumbuh sangat subur di iklim sejuk dan elevasi tinggi. Kopi asal pegunungan Bandung Selatan memiliki sejarah panjang sejak masa kolonial dan dikenal memiliki cita rasa asam buah yang khas. Tanaman ini biasanya ditanam di bawah naungan pohon yang lebih besar.",
+    "manfaat": [
+      "Menghasilkan biji kopi bernilai ekonomi tinggi untuk ekspor",
+      "Tanaman sela yang sangat baik untuk sistem wanatani (agroforestri)",
+      "Meningkatkan resapan air di kawasan hutan lindung desa"
+    ],
+    "images": [
+      "/images/plants/1781777922528-kopi-arabika.jpg",
+      "/images/plants/1781777922532-images-(2).jpg"
+    ],
+    "is_qr_code_generated": true,
+    "qr_code_path": "/images/qrcodes/QR-flora-005.png"
+  },
+  {
+    "id": "flora-006",
+    "slug": "pohon-pinus",
+    "nama_lokal": "Pohon Pinus",
+    "nama_latin": "Pinus merkusii",
+    "famili": "Pinaceae",
+    "kategori": "Tanaman Peneduh",
+    "lokasi_taman": "Zona Pinggir Alun-alun",
+    "deskripsi_singkat": "Pohon berdaun jarum dengan aroma resin khas pegunungan yang menenangkan.",
+    "deskripsi_lengkap": "Pinus merupakan tanaman utama yang membentuk ekosistem hutan di sekitar kawasan wisata Ciwidey. Pohon menjulang tinggi ini memiliki daun berbentuk jarum untuk mengurangi penguapan. Kehadirannya di area taman memberikan keteduhan ekstra dan menyebarkan aroma terapi alami ketika tersapu angin.",
+    "manfaat": [
+      "Peneduh utama dan penahan angin (windbreaker) yang efektif",
+      "Getahnya disadap untuk bahan baku industri (gondorukem dan terpentin)",
+      "Daunnya yang gugur menjadi mulsa alami pelindung tanah"
+    ],
+    "images": [
+      "/images/plants/1781777928663-Pinus.jpg"
+    ],
+    "is_qr_code_generated": true,
+    "qr_code_path": "/images/qrcodes/QR-flora-006.png"
   }
 ]

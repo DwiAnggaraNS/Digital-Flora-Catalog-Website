@@ -12,6 +12,8 @@ export default function Home() {
             alt="Lush tropical garden pathway with ferns and palms"
             className="w-full h-full object-cover"
             src="/images/ui/background-landing-page.png"
+            fetchPriority="high"
+            decoding="async"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
         </div>
@@ -63,6 +65,8 @@ export default function Home() {
                   alt="Fern close up"
                   className="w-full h-full object-cover"
                   src="/images/ui/daun.png"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="h-20 w-32 border border-secondary-container rounded overflow-hidden grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer">
@@ -70,6 +74,8 @@ export default function Home() {
                   alt="Moss on stone"
                   className="w-full h-full object-cover"
                   src="/images/ui/lumut.png"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>

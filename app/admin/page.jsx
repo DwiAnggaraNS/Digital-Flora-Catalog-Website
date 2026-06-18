@@ -177,8 +177,7 @@ export default function AdminPage() {
           <QRCodeCanvas
             key={plant?.id}
             id={`qr-gen-${plant?.id}`}
-            value={`${origin}/explore/${plant?.slug}`}
-            size={256}
+            value={`https://flora-alamendah.vercel.app/explore/${plant?.slug || plant?.id}`}            size={256}
             level="H"
             includeMargin={true}
           />
@@ -231,6 +230,8 @@ export default function AdminPage() {
                         src={img}
                         alt=""
                         className="w-12 h-12 object-cover rounded border border-secondary-container"
+                        loading="lazy"
+                        decoding="async"
                       />
                     ))}
                   </div>
@@ -248,6 +249,8 @@ export default function AdminPage() {
                           src={plant.qr_code_path}
                           alt="QR Code"
                           className="w-20 h-20 object-contain border border-secondary-container"
+                          loading="lazy"
+                          decoding="async"
                         />
                         <button
                           onClick={() => downloadQR(plant)}
