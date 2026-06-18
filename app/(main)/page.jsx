@@ -1,5 +1,6 @@
 import Link from "next/link";
 import FeatureCard from "@/components/FeatureCard";
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
           <img
             alt="Lush tropical garden pathway with ferns and palms"
             className="w-full h-full object-cover"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6as4ChzhSKhN4dH1ODWCsXAKATIQhNFFHCY6DtjA96CVCL_zjH7BLgsplchXZ5sesf-lRXehUv0lBSW4nYQFlzEyN14JajYpE8OaGS2qVCzUvzQRVf3GgPfkSGl-mDBoAnt0h6FLLdn07llSweBA8Ta0esb833yoiUrYXemgreRTlpbiE_WqaOD7nAkOdpI2j8pJZybhy9pFDPj0oOVvi39COF_TBNAxaq6Zx1B83GN8b-T6tVa9YFCfMwJUqAinjJRQJFfItIQ"
+            src="/images/ui/background-landing-page.png"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
         </div>
@@ -61,14 +62,14 @@ export default function Home() {
                 <img
                   alt="Fern close up"
                   className="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaMFLOfojpK3NDgh_pAhCtFjttErYp8W1UPlaYdlj9RyT40X9YL7kLbfSrRC9SHYqA1RXrch0tqcaj4mAJCXtM0k-DNtYfKOXCuLrrL3UVROQMBOQvg2e4a4jHDCOrBUWbz6Iubdy50TPn-APUrDek0zXqUz_N1Sozek7NzfS4OqttAAcg4vPGJpUiBl44ss3foz-KU_YTYxhzWvQ6RtN9CxT_5bE7rLbR4Gbvtg4R5eBa4pan17neX8UzmXXZFRU8k1TM_d5XLQ"
+                  src="/images/ui/daun.png"
                 />
               </div>
               <div className="h-20 w-32 border border-secondary-container rounded overflow-hidden grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer">
                 <img
                   alt="Moss on stone"
                   className="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSYy82s74Zi4xNrnb3WssWPG9bfSNvmV5msT_Yg4f5GMShNcfk92wnQTvmsjqPvVPEOB7eOzeiMwI241u8_6aY-8z_c9uqUTzjgwjWtZkC400VCV9RxRtjRWReohcs6sB27qdCkNPCXcDKD-2fZc7TWWJXKfLl4t_lZruXyncrTxxQy2LoXsUFcyBkWh2LuCeYGXdu0nz-24HSaT8SOeVo9xbm31A_ZB_4PQ6RPWNzfCZg3xk4-LKMGahjf1glBClGYe8fiZIygw"
+                  src="/images/ui/lumut.png"
                 />
               </div>
             </div>

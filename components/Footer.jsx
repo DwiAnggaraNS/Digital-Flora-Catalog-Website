@@ -12,24 +12,25 @@ export default function Footer() {
         </span>
       </div>
 
+      <p className="font-sans text-sm text-[#625e53] max-w-xl leading-relaxed">
+        Website ini merupakan program kerja sub-unit tim KKN-PM Periode 2 Tahun 2026 
+        Klaster Rancabali Merona, Universitas Gadjah Mada.
+      </p>
+
+      <br/>
+
       <div className="flex flex-wrap justify-center gap-6 md:gap-8 mb-6">
         <Link
-          href="#"
-          className="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary hover:underline transition-all duration-300"
+          href="https://www.instagram.com/rancarona?igsh=MWI4MG45bHB1eDVxOQ=="
+          className="font-body-md text-body-md text-primary dark:text-secondary-fixed-dim hover:text-primary hover:underline transition-all duration-300"
         >
-          Tentang Kami
+          Instagram Kami
         </Link>
         <Link
-          href="#"
-          className="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary hover:underline transition-all duration-300"
+          href="https://www.tiktok.com/@rancarona?_r=1&_t=ZS-97I722yfh0T"
+          className="font-body-md text-body-md text-primary dark:text-secondary-fixed-dim hover:text-primary hover:underline transition-all duration-300"
         >
-          Program Konservasi
-        </Link>
-        <Link
-          href="#"
-          className="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary hover:underline transition-all duration-300"
-        >
-          Dukung Kami
+          Tiktok Kami
         </Link>
       </div>
 

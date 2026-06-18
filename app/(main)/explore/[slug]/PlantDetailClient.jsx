@@ -22,34 +22,6 @@ export default function PlantDetailClient({ plant }) {
   const displayName = nama_lokal || name;
 
   return (
-    <div className="flex flex-col min-h-screen bg-background text-on-surface">
-      <header className="fixed top-0 w-full z-50 flex items-center justify-between px-margin-mobile md:px-margin-desktop h-16 bg-background/90 backdrop-blur-md border-b border-secondary-container transition-all">
-        <div className="flex items-center gap-2">
-          <button onClick={() => router.back()} className="p-2 hover:bg-surface-container-low text-primary rounded-lg transition-colors cursor-pointer" aria-label="Kembali">
-            <span className="material-symbols-outlined">arrow_back</span>
-          </button>
-          <span className="font-headline-sm text-headline-sm text-primary">Sapa Flora Alamendah</span>
-        </div>
-        <div className="flex gap-4">
-          <button 
-            onClick={() => {
-              if (navigator.share) {
-                navigator.share({ title: `Sapa Flora Alamendah - ${displayName}`, text: `Yuk kenalan dengan ${displayName} (${nama_latin})`, url: window.location.href }).catch(console.error);
-              } else {
-                navigator.clipboard.writeText(window.location.href);
-                alert("Tautan halaman berhasil disalin ke papan klip!");
-              }
-            }}
-            className="p-2 hover:bg-surface-container-low text-primary rounded-lg transition-colors cursor-pointer" aria-label="Bagikan"
-          >
-            <span className="material-symbols-outlined">share</span>
-          </button>
-          <Link href="/explore" className="p-2 hover:bg-surface-container-low text-primary rounded-lg transition-colors" aria-label="Katalog">
-            <span className="material-symbols-outlined">eco</span>
-          </Link>
-        </div>
-      </header>
-
       <main className="pt-16 pb-12 max-w-4xl mx-auto w-full flex-grow">
         <section className="relative w-full aspect-[4/5] md:aspect-video overflow-hidden rounded-b-xl border border-secondary-container bg-surface-container-low">
           <div className="flex h-full transition-transform duration-500 ease-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
@@ -101,16 +73,5 @@ export default function PlantDetailClient({ plant }) {
           </section>
         )}
       </main>
-
-      <footer className="w-full py-stack-lg px-margin-mobile md:px-margin-desktop flex flex-col items-center gap-stack-sm text-center bg-surface-container-low border-t border-secondary-container">
-        <span className="font-headline-sm text-headline-sm text-primary">Sapa Flora Alamendah</span>
-        <div className="flex gap-6 my-4">
-          <Link className="font-body-md text-secondary hover:text-primary underline transition-opacity" href="#">Tentang Kami</Link>
-          <Link className="font-body-md text-secondary hover:text-primary underline transition-opacity" href="#">Program Konservasi</Link>
-          <Link className="font-body-md text-secondary hover:text-primary underline transition-opacity" href="#">Dukung Kami</Link>
-        </div>
-        <p className="font-body-md text-secondary text-sm">© 2026 Desa Alamendah, Kec. Rancabali. Melestarikan Pusaka Hijau Kita.</p>
-      </footer>
-    </div>
   );
 }

@@ -19,9 +19,7 @@ export default function Navbar() {
     <>
       <header className="fixed top-0 w-full z-50 flex items-center justify-between px-margin-mobile md:px-margin-desktop h-16 bg-background/90 backdrop-blur-md border-b border-secondary-container transition-colors">
         <Link href="/" className="flex items-center gap-2 hover:opacity-90 transition-opacity">
-          <span className="material-symbols-outlined text-primary text-2xl" data-icon="eco">
-            eco
-          </span>
+          <img alt="Logo Tim KKN Rancabali Merona 2026" className="w-15 h-15" src="/images/ui/logo.png"></img>
           <span className="font-headline-sm text-headline-sm text-primary">Sapa Flora Alamendah</span>
         </Link>
 

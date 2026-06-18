@@ -5,8 +5,8 @@
     "nama_lokal": "Pohon Beringin",
     "nama_latin": "Ficus benjamina",
     "famili": "Moraceae",
-    "kategori": "Tanaman Peneduh",
-    "lokasi_taman": "Zona Utama Alun-alun",
+    "kategori": "Tanaman Hias",
+    "lokasi_taman": "Zona Utama Alun-alun dan Di Sekitar Jalan Raya",
     "deskripsi_singkat": "Pohon rindang ikonik dengan akar gantung yang kokoh.",
     "deskripsi_lengkap": "Beringin adalah pohon berukuran besar yang identik dengan akar gantungnya. Di Desa Alamendah, pohon ini dibiarkan tumbuh besar untuk menjaga ekosistem air tanah dan memberikan keteduhan di area alun-alun.",
     "manfaat": [
@@ -17,29 +17,7 @@
     "images": [
       "https://lh3.googleusercontent.com/aida-public/AB6AXuDSYy82s74Zi4xNrnb3WssWPG9bfSNvmV5msT_Yg4f5GMShNcfk92wnQTvmsjqPvVPEOB7eOzeiMwI241u8_6aY-8z_c9uqUTzjgwjWtZkC400VCV9RxRtjRWReohcs6sB27qdCkNPCXcDKD-2fZc7TWWJXKfLl4t_lZruXyncrTxxQy2LoXsUFcyBkWh2LuCeYGXdu0nz-24HSaT8SOeVo9xbm31A_ZB_4PQ6RPWNzfCZg3xk4-LKMGahjf1glBClGYe8fiZIygw"
     ],
-    "is_qr_code_generated": false,
-    "qr_code_path": ""
-  },
-  {
-    "id": "flora-672014",
-    "slug": "pohon-pisang",
-    "nama_lokal": "Pohon Pisang",
-    "nama_latin": "asda",
-    "famili": "adasa",
-    "kategori": "Bernilai Ekonomi",
-    "lokasi_taman": "asda",
-    "deskripsi_singkat": "asda",
-    "deskripsi_lengkap": "adsad",
-    "manfaat": [
-      "adsad",
-      "adada",
-      "asdasdas"
-    ],
-    "images": [
-      "/images/plants/1781714672006-logo.png",
-      "/images/plants/1781714672011-RUL-Bearing-Research-(3).png"
-    ],
-    "is_qr_code_generated": false,
-    "qr_code_path": ""
+    "is_qr_code_generated": true,
+    "qr_code_path": "/images/qrcodes/QR-flora-001.png"
   }
 ]
