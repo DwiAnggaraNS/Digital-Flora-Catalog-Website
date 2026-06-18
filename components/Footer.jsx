@@ -13,8 +13,8 @@ export default function Footer() {
       </div>
 
       <p className="font-sans text-sm text-[#625e53] max-w-xl leading-relaxed">
-        Website ini merupakan program kerja sub-unit tim KKN-PM Periode 2 Tahun 2026 
-        Klaster Rancabali Merona, Universitas Gadjah Mada.
+        Website ini merupakan program kerja tim Rancabali Merona KKN-PM Periode 2 Tahun 2026, 
+        Universitas Gadjah Mada.
       </p>
 
       <br/>

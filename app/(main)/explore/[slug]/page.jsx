@@ -19,8 +19,7 @@ export default async function PlantDetailPage({ params }) {
     if (!plant) {
       return notFound();
     }
-
-    return <PlantDetailClient plant={plant} />;
+    return <PlantDetailClient plant={plant}/>;
   } catch (error) {
     console.error("Error reading plants data:", error);
     return notFound();

@@ -33,8 +33,7 @@ export default function PlantCard({ plant }) {
           {nama_latin}
         </p>
         <div className="mt-auto flex items-center justify-between pt-4 border-t border-secondary-container/50">
-          <Link
-            href={`/explore/${slug}`}
+          <span
             className="font-label-md text-label-md text-primary flex items-center group/link hover:opacity-80 transition-opacity"
           >
             Kenalan yuk
@@ -44,7 +43,7 @@ export default function PlantCard({ plant }) {
             >
               arrow_forward
             </span>
-          </Link>
+          </span>
         </div>
       </div>
     </div>
